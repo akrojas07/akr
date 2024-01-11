@@ -75,98 +75,92 @@
             <div class="row">
                 <div class="col">
                     <p class="collapsetitle">Languages</p>
-                    <button type="button" class="collapsible">C#</button>
-                    <div class="content">
-                        <ul>
-                            <li>Services</li>
-                            <li>Controllers</li>
-                            <li>Repositories</li>
-                        </ul>
-                    </div>
-                    <div class="nocollapse">TypeScript / JavaScript</div>
-                    <div class="noncontent"></div>
-                    <div class="nocollapse">GraphQL</div>
-                    <div class="noncontent"></div>
-                    <div class="nocollapse">SQL</div>
-                    <div class="noncontent"></div>
+                    <p class="nocollapse">TypeScript / JavaScript</p>
+                    <p class="noncontent"></p>
+                    <p class="nocollapse">C#</p>
+                    <p class="noncontent"></p>
+                    <p class="nocollapse">GraphQL</p>
+                    <p class="noncontent"></p>
+                    <p class="nocollapse">SQL</p>
+                    <p class="noncontent"></p>
                     <p class="nocollapse">HTML / CSS / SASS</p>
                 </div>
                 <div class="col">
                     <p class="collapsetitle">Frameworks & Technologies</p>
-                    <button type="button" class="collapsible">Angular</button>
-                    <div class="content">
+                    <details class="collapsible">
+                        <summary>Angular</summary> 
                         <ul>
                             <li>Component based architecture</li>
                             <li>Observables</li>
                         </ul>
-                    </div>
-                    <button type="button" class="collapsible">React</button>
-                    <div class="content">
+                    </details>
+                    <details class="collapsible">
+                        <summary>React</summary>
                         <ul>
                             <li>Functional programming</li>
                             <li>JSX</li>
                             <li>Babel</li>
                             <li>Webpack</li>
                         </ul>
-                    </div>
-                    <div class="nocollapse">Bootstrap</div>
-                    <div class="noncontent"></div>
-                    <div class="nocollapse">.NET Core</div>
-                    <div class="noncontent"></div>
-                    <div class="nocollapse">Google Cloud Platform</div>
-                    <div class="noncontent"></div>
+                    </details>
+                    <p class="nocollapse">Bootstrap</p>
+                    <p class="noncontent"></p>
+                    <p class="nocollapse">.NET Core</p>
+                    <p class="noncontent"></p>
+                    <p class="nocollapse">Google Cloud Platform</p>
+                    <p class="noncontent"></p>
 
                 </div>
                 <div class="col">
                     <p class="collapsetitle">Data transfer</p>
-                    <button type="button" class="collapsible">APIs / Web Services</button>
-                    <div class="content">
+                    <details class="collapsible">
+                        <summary>APIs / Web Services</summary>
                         <ul>
                             <li>RESTful Web Services</li>
                             <li>Asynchronous Programming</li>
                         </ul>
-                    </div>
+                    </details>
                 </div>
             </div>
             <div class="row">
                 <div class="col">
                     <p class="collapsetitle">Database</p>
-                    <button type="button" class="collapsible">SQL Server / MySQL</button>
-                    <div class="content">
+                    <details class="collapsible">
+                        <summary>SQL Server / MySQL</summary>
                         <ul>
                             <li>CRUD procedures (Create, Read, Update, Delete)</li>
                             <li>Stored Procedures</li>
                         </ul>
-                    </div>
-                    <button type="button" class="collapsible">MongoDB</button>
-                    <div class="content">
+                    </details>
+                    <details class="collapsible">
+                        <summary>MongoDB</summary>
                         <ul>
                             <li>Document model</li>
                             <li>JSON</li>
                         </ul>
-                    </div>
+                    </details>
                 </div>
                 <div class="col">
                     <p class="collapsetitle">Architecture</p>
-                    <button type="button" class="collapsible">Three Tier Application Architecture</button>
-                    <div class="content">
+                    <details class="collapsible">
+                        <summary>Three Tier Application Architecture</summary>
                         <ul>
                             <li>Presentation</li>
                             <li>Business</li>
                             <li>Data</li>
                         </ul>
-                    </div>
-                    <div class="nocollapse">Domain Driven Design</div>
-                    <div class="noncontent"></div>
-                    <div class="nocollapse">Microservice architecture</div>
-                    <div class="noncontent"></div>
-                    <div class="nocollapse">Client-server architecture</div>
-                    <div class="noncontent"></div>
+                    </details>
+                    <p class="nocollapse">Domain Driven Design</p>
+                    <p class="noncontent"></p>
+                    <p class="nocollapse">Microservice architecture</p>
+                    <p class="noncontent"></p>
+                    <p class="nocollapse">Client-server architecture</p>
+                    <p class="noncontent"></p>
                 </div>
                 <div class="col">
                     <p class="collapsetitle">Paradigms & Principles</p>
-                    <button type="button" class="collapsible">SOLID Design Principles</button>
-                    <div class="content">
+                    <details class="collapsible">
+                        <summary>SOLID Design Principles</summary>
                         <ul>
                             <li>
                                 Single Responsibility Principle
@@ -179,9 +173,9 @@
                                 <li>Dependency Injection</li>
                             </ul>
                         </ul>
-                    </div>
-                    <button type="button" class="collapsible">Object Oriented Programming</button>
-                    <div class="content">
+                    </details>
+                    <details class="collapsible">
+                        <summary>Object Oriented Programming</summary>                        
                         <ul>
                             <li>Classes / Objects</li>
                             <ul>
@@ -213,7 +207,7 @@
                                 <li>Method Overriding</li>
                             </ul>
                         </ul>
-                    </div>
+                    </details>
                     <p class="nocollapse">DRY</p>
                 </div>
             </div>
@@ -444,22 +438,6 @@
         integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
         crossorigin="anonymous"
     ></script>
-    <script>
-        let coll = document.getElementsByClassName("collapsible");
-        let i;
-        
-        for (i = 0; i < coll.length; i++) {
-          coll[i].addEventListener("click", function() {
-            this.classList.toggle("active");
-            let content = this.nextElementSibling;
-            if (content.style.maxHeight){
-              content.style.maxHeight = null;
-            } else {
-              content.style.maxHeight = content.scrollHeight + "px";
-            }
-          });
-        }
-    </script>
 
 </body>
 

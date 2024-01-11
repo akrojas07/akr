@@ -223,28 +223,24 @@ a{
     text-align: left;
     outline: none;
 }
+
 .collapsetitle{
     margin: 2%;
     font-weight: bold;
 }
 
 .collapsible::after{
-    content: '\02795'; /* Unicode character for "plus" sign (+) */
     font-size: 13px;
     color: white;
     float: right;
     margin-left: 5px;
 }
 
-.noncontent, .content {
+.noncontent {
     padding: 0 18px;
+    margin-bottom: 2%;
     max-height: 0;
-    overflow: hidden;
     transition: max-height 0.2s ease-out;
-}
-
-.active:after {
-    content: "\2796"; /* Unicode character for "minus" sign (-) */
 }
 
 @media(min-width:800px){
