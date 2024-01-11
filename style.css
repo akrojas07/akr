@@ -199,14 +199,52 @@ a{
     color:lightgray;
     font-size: medium;
 }
+
 .projectTitles{
     color:var(--clr-accent);
     font-size: x-large;
     
     font-weight: var(--fw-bold);
 }
+
 .program{
     font-family: var(--ff-secondary);
+    font-size: medium;
+}
+
+.nocollapse, .collapsible {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    margin: 2%;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+}
+.collapsetitle{
+    margin: 2%;
+    font-weight: bold;
+}
+
+.collapsible::after{
+    content: '\02795'; /* Unicode character for "plus" sign (+) */
+    font-size: 13px;
+    color: white;
+    float: right;
+    margin-left: 5px;
+}
+
+.noncontent, .content {
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+.active:after {
+    content: "\2796"; /* Unicode character for "minus" sign (-) */
 }
 
 @media(min-width:800px){
